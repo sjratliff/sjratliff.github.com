@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- index For Fantasy Footbal Player Draft List-->
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="keywords" content="Bar, beer, glendale, Calico Jacks, Party,"/>
+        <meta name="description" content="Vip List"/>
+        <meta name="robots" content="index, follow" />
+        <meta name="viewport" content="user-scalable=no, width=device-width" />
+        <meta name="viewport" content="target-densitydpi=device-dpi" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320"/>
+        
+        <title>The V.I.P. List </title>
+        <link rel="stylesheet" href="style.css" />
+        
+    </head>
+        <body>
+            <header><h1 id="test">V.I.P. Assistant</h1></header>
+            <legend>Navigation</legend>
+            </nav>
+            <form action="#" method="post" id="startPage">
+                <fieldset id="startFieldset">
+                    <span> Fill Info Below </span>
+                    <ul id="errors"></ul>
+                    <ul id="questions">
+                        <li id="select"><label for="group">Pick Your Night :</label></li>
+                        <li><label for="tname">Your Name: <label><input type="text" id="tname" /></li>
+                        <li><label for="sex">Sex: 	</label>
+                    <ul class="checkbox">
+                      <li><input type="radio" checked value="Male" id="male" name="sex" /><label for="male">Male</label></li>
+                      <li><input type="radio" checked value="Female" id="female" name="sex" /><label for="female">Female</label></li>
+                                </ul>
+                        </li>
+                        <li><label for="startdate">Birthday: </label><input type="date" min="2011-11-01" max="2011-12-31" id="startdate" name='startdate'required aria-required="true" placeholder="1990-01-01">
+                        <li><label for="pword">Number Of People In Party: </label><input type="password" id="pword" name="pword"/></li>
+                        <li><label for="cpword">Phone Number: </label><input type="password" id= "cpword" name="cpword" /></li>
+                        <li><label for="email">Email: </label><input type="email" id="email" placeholder="johnnyblaze@nfl.com" name="email" /></li>
+                        <li><label for="rating">How easy was the site to use? :</label>
+                            <input type="range" min="0" max="10" value="5" name="rating" id="rating">
+                      <li><label for="comments"> Reason For Party? (Birthday, Divorce, Graduation, ETC.): </label><textarea id="comments"></textarea></li></ul>
+                </fieldset>
+                <input type="submit" value="Save Contact" id="submit" /><br />
+                <nav>
+                <a href="#" id="clear"> Clear Data</a>
+                <a href="#" id="displayLink">Display Data </a>
+                <a href="additem.html" id="addNew" style="display:none;">Add New Player</a>
+
+            </form>
+            <script src="js/main.js" type="text/javascript"></script>
+            <script src="jquery.js"></script>
+                
+    </body>
+    </html>
