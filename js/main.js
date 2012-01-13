@@ -137,7 +137,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		var imageLi = document.createElement('li');
 		makeSubList.appendChild(imageLi);
 		var newImg = document.createElement('img');
-		var setSrc = newImg.setAttribute("src","images/"+ catName +".jpg");
+		var setSrc = newImg.setAttribute("src","images/Lettericons/"+ catName +".png");
 		imageLi.appendChild(newImg);
 		 
 	
