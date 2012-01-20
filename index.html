@@ -27,10 +27,10 @@
 
 	<div data-role="page" id="home">
 		<div data-role="header" data-position="fixed" data-theme="a">
-			<h1>The V.I.P. List Good App</h1>
+			<h1>The V.I.P. List</h1>
 		</div>
 		<div 
-		<a href="additem.html" data-role="button"><img src="images/cta/vip_ban.jpg"</a>
+		<a href="#additem" data-role="button"><img src="images/cta/vip_ban.jpg"</a>
 		</div>
 		<div
 		
@@ -38,7 +38,7 @@
 		<div data-role="content">
 			<ul data-role="listview" data-inset="true"data-filter="true">
 				<li><a href="#events">
-					<h3>This Weeks Events</h3>
+					<h3>Event Stream</h3>
 					<p>VIP List For The Best Events This Week</p>
 					
 				</a></li>
@@ -62,56 +62,166 @@
 					<p>Did You Make The Scene</p>
 					
 				</a></li>
+				<li><a href="#feedback">
+					<h3>Club Feedback</h3>
+					<p>Where You Treated Like V.I.P.</p>
+					
+				</a></li>
 				
 
 			</ul>
-			<a href="additem.html" data-role="button" data-theme="e">Get on The List</a>
+			<a href="#additem" data-role="button" data-theme="e">Get on The List</a>
 				
 		</div>
 		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 2</h4>
+			<h4>Steve Ratliff MIU Week 3</h4>
+		</div>
+	
+	</div>
+	<div data-role="page" id="additem" data-add-back-btn="true">
+	<div data-role="header" data-position="fixed">
+			<h1>Sign Up</h1>
+		</div>
+	<form action="#" method="post" id="startPage">
+                <fieldset id="startFieldset">
+                    <ul id="errors"></ul>
+                    <ul id="questions"></ul>
+                        <li id="select"><label for="group">Pick Your Night :</label></li>
+                        <li><label for="tname">Your Name: <label><input type="text" id="tname" /></li>
+                        <li><label for="sex">Gender:</label>
+                    <ul class="checkbox">
+                      <li><input type="radio" checked value="Male" id="male" name="sex" /><label for="male">Male</label></li>
+                      <li><input type="radio" checked value="Female" id="female" name="sex" /><label for="female">Female</label></li>
+                                </ul>
+                        </li>
+                        <li><label for="startdate">Birthday: </label><input type="date" min="2011-11-01" max="2011-12-31" id="startdate" name='startdate'required aria-required="true" placeholder="1990-01-01">
+                        <li><label for="pword">Number Of People In Party: </label><input type="password" id="pword" name="pword"/></li>
+                        <li><label for="cpword">Phone Number: </label><input type="password" id= "cpword" name="cpword" /></li>
+                        <li><label for="email">Email: </label><input type="email" id="email" placeholder="johnnyblaze@nfl.com" name="email" /></li>
+                        <li><label for="rating">How easy was the site to use? :</label>
+                            <input type="range" min="0" max="10" value="5" name="rating" id="rating">
+                      <li><label for="comments"> Reason For Party? (Birthday, Divorce, Graduation, ETC.): </label><textarea id="comments"></textarea></li></ul>
+                </fieldset>
+                <input type="submit" value="Save Contact" id="submit" /><br />
+                <nav>
+                <a href="#" id="clear"> Clear Info</a>
+                <a href="#" id="displayLink">Display V.I.P.'s </a>
+                <a href="#additem" id="addNew" style="display:none;">Add V.I.P. Party</a>
+
+            </form>
+		<div data-role="footer" data-position="fixed">
+			<h4>Steve Ratliff MIU Week 3</h4>
 		</div>
 	
 	</div>
 	
-		<div data-role="page" id="pictures">
-<div id="cta">
-</div>
+	<div data-role="page" id="pictures" data-add-back-btn="true">
 
 
-<div data-role="header" data-theme="a">
+
+	<div data-role="header" data-theme="a">
 
 <h1>Photo's</h1>
-
-</div><!-- /header -->
-<div class="ui-grid-d">
-<div class="ui-block-a"><img src="images/pics/1.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-b"><img src="images/pics/2.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-c"><img src="images/pics/3.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-d"><img src="images/pics/4.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-a"><img src="images/pics/5.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-b"><img src="images/pics/6.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-c"><img src="images/pics/7.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-d"><img src="images/pics/8.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-a"><img src="images/pics/9.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-b"><img src="images/pics/10.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-c"><img src="images/pics/11.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-d"><img src="images/pics/12.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-a"><img src="images/pics/13.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-b"><img src="images/pics/14.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-c"><img src="images/pics/15.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-d"><img src="images/pics/16.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-a"><img src="images/pics/17.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-b"><img src="images/pics/18.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-c"><img src="images/pics/5.jpeg" alt="" class="desert"/></div>
-<div class="ui-block-d"><img src="images/pics/12.jpeg" alt="" class="desert"/></div>
 </div>
+
+<fieldset class="ui-grid-b">
+	<div class="ui-block-a"><strong>01/15/2012</strong> Calico Jacks Glendale<img src="images/pics/1.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-b"><strong>01/15/2012</strong> Calico Jacks Glendale<img src="images/pics/2.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-c"><strong>01/15/2012</strong> McFaddens Glendale<img src="images/pics/3.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-a"><strong>01/15/2012</strong> Sandbar Peroia<img src="images/pics/4.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-b"><strong>01/14/2012</strong> McFaddens Glendale<img src="images/pics/5.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-c"><strong>01/14/2012</strong> Calico Jacks Glendale<img src="images/pics/6.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-a"><strong>01/14/2012</strong> Sandbar Peroia<img src="images/pics/7.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-b"><strong>01/14/2012</strong> Sandbar Peroia<img src="images/pics/8.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-c"><strong>01/13/2012</strong> Sandbar Peroia<img src="images/pics/9.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-a"><strong>01/13/2012</strong> Calico Jacks Glendale<img src="images/pics/10.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-b"><strong>01/13/2012</strong> Sandbar Peroia<img src="images/pics/11.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-c"><strong>01/13/2012</strong> McFaddens Glendale<img src="images/pics/12.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-a"><strong>01/12/2012</strong> Sandbar Peroia<img src="images/pics/13.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-b"><strong>01/12/2012</strong> Calico Jacks Glendale<img src="images/pics/14.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-c"><strong>01/12/2012</strong> McFaddens Glendale<img src="images/pics/15.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-a"><strong>01/11/2012</strong> Sandbar Peroia<img src="images/pics/16.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-b"><strong>01/11/2012</strong> McFaddens Glendale<img src="images/pics/17.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-c"><strong>01/10/2012</strong> Calico Jacks Glendale<img src="images/pics/18.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-a"><strong>01/10/2012</strong> Sandbar Peroia<img src="images/pics/5.jpeg" alt="" class="pictures"/></div>
+	<div class="ui-block-b"><strong>01/10/2012</strong> McFaddens Glendale<img src="images/pics/12.jpeg" alt="" class="pictures"/></div>
+</fieldset>
+
 		
-		<a href="additem.html" data-role="button" data-theme="e">Get on The List</a>		
+		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 2</h4>
+			<h4>Steve Ratliff MIU Week 3</h4>
+			</div>
 		</div>
+	
+	<div data-role="page" id="feedback" data-add-back-btn="true">
+		<div data-role="header" data-theme="a">
+			<h1>Club Reviews</h1>
+	</div>
+		<div data-role="content">
+		
+			<form action="" method="post" id="reviews">
+			
+		
+		<div data-role="fieldcontain">
+			<label for="club">Pick A Club</label>
+			<select name="club" id="club-choice" data-native-menu="false" class="required">
+			<option data-placeholder="true" value>Where Were You?</option>
+				<optgroup label="Westside Clubs">
+					<option value="Calicos">Calico Jacks Cantina</option>
+					<option value="mcfaddens">McFadden's Saloon</option>
+				</optgroup>
+				<optgroup label="Eastside Clubs">
+					<option value="sandbar">Sandbar Peiora</option>
+				</optgroup>
+					
+			</select>
+		</div>
+		
+		<div data-role="fieldcontain">
+			<label for="club">Were You On "The List"</label>
+			<select name="list" id="on-list" data-native-menu="false" class="required">
+			<option data-placeholder="true"value>Choose One</option>
+				<option value="yes">Yes</option>
+				<option value="no">No</option>
+			</select>
+		</div>
+				
+		<div data-role="fieldcontain">
+			<label for="Email">Email Address</label>
+			<input type="email" name="email" id="email"class="required email" placeholder="user@something.com">		
+			
+		</div>
+		
+		
+		<div data-role="fieldcontain">
+			<label for="phone">Phone Number</label>
+			<input type="tel" name="phone" id="phone"class="required number"placeholder="312-555-1212"> 
+		</div>
+				
+		<div data-role="fieldcontain">
+			<label for="comments">Anything We Missed?</label>
+			<textarea></textarea>	
+		</div>
+		
+		<div data-role="fieldcontain">
+			<input type="submit" value="Send Info" data-theme="e" />
+			<input type="reset" value="Clear Info" data-theme="" />
+					
+		
+		</div>
+				
+				<a href="#reviewerrors" id="rerrorslink" data-rel="dialog" data-transition="pop">Errors</a>	
+			</form>
+		
+		
+		
+		
+		
+		
+		</div>
+
 	
 	</div>
 	
@@ -119,13 +229,125 @@
 	<div data-role="page" id="events" data-add-back-btn="true">
 	
 		<div data-role="header" data-position="fixed">
-			<h1>This Weeks Events</h1>
+			<h1>Event Stream</h1>
 		</div>
 		
 		<div data-role="content">
 		
-			<ul data-role="listview">
+			<ul data-role="listview"data-filter="true" data-dividertheme="e">
+			<li data-role="list-divider">Today</li>
+			
 				<li>
+						<img src="images/events/calicojacks_saturday.jpg" />
+						<h3>Naughty School Girl Contest</h3>
+						<p>Dishing Out The Discipline</p>
+					</a>	
+				</li>
+					<li>
+						<img src="images/events/mcfaddens_friday13th.jpg" />
+						<h3>Friday The 13th Party</h3>
+						<p>Do You Have What It Takes To Survive?</p>
+					</a>	
+				</li>
+					<li>
+						<img src="images/events/02lounge_friday.jpg" />
+						<h3>High Five Friday's</h3>
+						<p>Buy 4 Fifth Is Only $2</p>
+					</a>	
+				</li>
+						<li>
+						<img src="images/events/calicojacks_saturday.jpg" />
+						<h3>Naughty School Girl Contest</h3>
+						<p>Dishing Out The Discipline</p>
+					</a>	
+				</li>
+					<li>
+						<img src="images/events/mcfaddens_friday13th.jpg" />
+						<h3>Friday The 13th Party</h3>
+						<p>Do You Have What It Takes To Survive?</p>
+					</a>	
+				</li>
+					<li>
+						<img src="images/events/02lounge_friday.jpg" />
+						<h3>High Five Friday's</h3>
+						<p>Buy 4 Fifth Is Only $2</p>
+					</a>
+					<li data-role="list-divider">Tomorrow</li>	
+				</li>
+						<li>
+						<img src="images/events/calicojacks_saturday.jpg" />
+						<h3>Naughty School Girl Contest</h3>
+						<p>Dishing Out The Discipline</p>
+					</a>	
+				</li>
+					<li>
+						<img src="images/events/mcfaddens_friday13th.jpg" />
+						<h3>Friday The 13th Party</h3>
+						<p>Do You Have What It Takes To Survive?</p>
+					</a>	
+				</li>
+					<li>
+						<img src="images/events/02lounge_friday.jpg" />
+						<h3>High Five Friday's</h3>
+						<p>Buy 4 Fifth Is Only $2</p>
+					</a>	
+				</li>
+						<li>
+						<img src="images/events/calicojacks_saturday.jpg" />
+						<h3>Naughty School Girl Contest</h3>
+						<p>Dishing Out The Discipline</p>
+					</a>	
+				</li>
+					<li>
+						<img src="images/events/mcfaddens_friday13th.jpg" />
+						<h3>Friday The 13th Party</h3>
+						<p>Do You Have What It Takes To Survive?</p>
+					</a>	
+				</li>
+					<li>
+						<img src="images/events/02lounge_friday.jpg" />
+						<h3>High Five Friday's</h3>
+						<p>Buy 4 Fifth Is Only $2</p>
+					</a>	
+				</li>
+						<li>
+						<img src="images/events/calicojacks_saturday.jpg" />
+						<h3>Naughty School Girl Contest</h3>
+						<p>Dishing Out The Discipline</p>
+					</a>	
+				</li>
+					<li>
+						<img src="images/events/mcfaddens_friday13th.jpg" />
+						<h3>Friday The 13th Party</h3>
+						<p>Do You Have What It Takes To Survive?</p>
+					</a>
+					<li data-role="list-divider">Upcoming</li>	
+				</li>
+					<li>
+						<img src="images/events/02lounge_friday.jpg" />
+						<h3>High Five Friday's</h3>
+						<p>Buy 4 Fifth Is Only $2</p>
+					</a>	
+				</li>
+						<li>
+						<img src="images/events/calicojacks_saturday.jpg" />
+						<h3>Naughty School Girl Contest</h3>
+						<p>Dishing Out The Discipline</p>
+					</a>	
+				</li>
+					<li>
+						<img src="images/events/mcfaddens_friday13th.jpg" />
+						<h3>Friday The 13th Party</h3>
+						<p>Do You Have What It Takes To Survive?</p>
+					</a>	
+				</li>
+					<li>
+						<img src="images/events/02lounge_friday.jpg" />
+						<h3>High Five Friday's</h3>
+						<p>Buy 4 Fifth Is Only $2</p>
+					</a>	
+				</li>
+						<li>
 						<img src="images/events/calicojacks_saturday.jpg" />
 						<h3>Naughty School Girl Contest</h3>
 						<p>Dishing Out The Discipline</p>
@@ -147,9 +369,9 @@
 			</ul>
 	</div>
 		
-		<a href="additem.html" data-role="button" data-theme="e">Get on The List</a>		
+		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 2</h4>
+			<h4>Steve Ratliff MIU Week 3</h4>
 		</div>
 	
 	</div>
@@ -190,9 +412,9 @@
 			</ul>
 	</div>
 		
-		<a href="additem.html" data-role="button" data-theme="e">Get on The List</a>		
+		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 2</h4>
+			<h4>Steve Ratliff MIU Week 3</h4>
 		</div>
 	
 	</div>
@@ -265,9 +487,9 @@
 
 
 		</div>
-		<a href="additem.html" data-role="button" data-theme="e">Get on The List</a>
+		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 2</h4>
+			<h4>Steve Ratliff MIU Week 3</h4>
 		</div>
 		
 	</div>
@@ -309,14 +531,26 @@
 
 
 		</div>
-		<a href="additem.html" data-role="button" data-theme="e">Get on The List</a>
-		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 2</h4>
+		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>
+			<div data-role="footer" data-position="fixed">
+				<h4>Steve Ratliff MIU Week 3</h4>
 		</div>
+		
+			<div data-role="dialog" id="reviewerrors">
+			<div data-role="header" data-theme="a">
+			<h1>Incomplete Fields</h1>
+	</div>
+			<div data-role="content">
+				<ul>
+					<li>Test.</li>
+				</ul>
+			</div>
+	</div>
 
 	<!-- JavaScript under here -->
 	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 </body>
