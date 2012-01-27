@@ -1,15 +1,8 @@
 <!doctype html>  
 <html lang="en">
 <head>
-<style type="text/css">
-
-element {
-}
-
-</style>
 
 	<meta charset="utf-8">
-	
 	<title>The V.I.P. List Good App</title>
 	
 	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
@@ -20,10 +13,10 @@ element {
 	<!-- Mobile IE needs ClearType for smoothing fonts -->
 	<meta http-equiv="cleartype" content="on">
 	
-	
 	<!-- StyleSheets under here -->
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
 	<link rel="stylesheet" href="css/style.css" />
+	
 	
 	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
 	<script src="js/libs/modernizr.custom.min.js"></script>
@@ -33,7 +26,7 @@ element {
 <body>
 
 	<div data-role="page" id="home">
-		<div data-role="header" data-position="fixed" data-theme="a">
+		<div data-role="header" data-position="fixed" data-theme="a"data-role="button">
 			<h1>The V.I.P. List</h1>
 		</div>
 		<div 
@@ -81,8 +74,9 @@ element {
 				
 		</div>
 		
+		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
 	
 	</div>
@@ -90,70 +84,28 @@ element {
 	<div data-role="header" data-position="fixed">
 			<h1>Sign Up</h1>
 		</div>
+		<p align=center><img src="images/banner/banner.png"</p>
 	<form action="#" method="post" id="startPage">
-                      		<div data-role="fieldcontain">
-			<label for="club">Pick A Night</label>
-			<select name="night" id="night-choice" data-native-menu="false" class="required">
-			<option data-placeholder="true" value>What Night?</option>
-				
-					<option value="Thursday">Thursday</option>
-					<option value="Friday">Friday</option>
-					<option value="Saturday">Saturday</option>
-			</select>
-		</div>
-                
-                
-                		<div data-role="fieldcontain">
-			<label for="club">Pick A Club</label>
-			<select name="club" id="club-choice" data-native-menu="false" class="required">
-			<option data-placeholder="true" value>Where To Party?</option>
-				<optgroup label="Westside Clubs">
-					<option value="Calicos">Calico Jacks Cantina</option>
-					<option value="mcfaddens">McFadden's Saloon</option>
-				</optgroup>
-				<optgroup label="Eastside Clubs">
-					<option value="sandbar">Sandbar Peiora</option>
-				</optgroup>
-					
-			</select>
-		</div>
-		
-		<div data-role="fieldcontain">
-			<label for="club">Have You Been V.I.P. Before?"</label>
-			<select name="list" id="on-list" data-native-menu="false" class="required">
-			<option data-placeholder="true"value>Choose One</option>
-				<option value="yes">Yes</option>
-				<option value="no">No</option>
-			</select>
-		</div>
-				
-		<div data-role="fieldcontain">
-			<label for="Email">Email Address</label>
-			<input type="email" name="email" id="email"class="required email" placeholder="user@something.com">		
-			
-		</div>
-		
-		
-		<div data-role="fieldcontain">
-			<label for="phone">Phone Number</label>
-			<input type="tel" name="phone" id="phone"class="required number"placeholder="312-555-1212"> 
-		</div>
-		
-		
-		<div data-role="fieldcontain">
-			<label for="Name">Name</label>
-			<input type="email" name="email" id="email"class="required email" placeholder="user@something.com">		
-			
-		</div>                        
-                        <label for="startdate">Birthday: </label><input type="date" min="2011-11-01" max="2011-12-31" id="startdate" name='startdate'required aria-required="true" placeholder="1990-01-01">
-                        <label for="pword">Number Of People In Party: </label><input type="password" id="pword" name="pword"/>
+                <fieldset id="startFieldset">
+                    <ul id="errors"></ul>
+                    <ul id="questions"></ul>
+                      <label   id="select"class="required" for="group">Pick Your Night :</label>
+                      <label for="tname"class="required">Your Name: <label><input type="text" id="tname" />
+                      <label for="sex">Gender:</label>
+                    <ul class="checkbox">
+                      <input type="radio" checked value="Male" id="male" name="sex" /><label for="male">Male</label>
+                      <input type="radio" checked value="Female" id="female" name="sex" /><label 												for="female">Female</label>
+                      </ul>
                         
-        <div data-role="fieldcontain">
-			<label for="comments">Reason For Party? (Birthday, Divorce, Graduation, ETC.)</label>
-			<textarea></textarea>	
-		</div>
-                        
-                
+                        <label for="startdate">Birthday: </label><input type="date" min="2011-11-01" max="2011-12-31" 								id="startdate" name='startdate'required aria-required="true" 														placeholder="1990-01-01">
+                        <label for="pword">Number Of People In Party: </label><input type="password" id="pword" 									name="pword"/>
+                        <label for="cpword">Phone Number: </label><input type="password" id= "cpword" name="cpword"/>
+               			
+               			<label for="email">Email: </label><input type="email" id="email" 															placeholder="johnnyblaze@nfl.com" name="email" />
+
+ 			   <label for="comments">Reason For Party? (Birthday, Divorce, Graduation, ETC.): </label><textarea 						  id="comments"></textarea></ul>
+ 			   
+                </fieldset>
                 <input type="submit" value="Save Contact" id="submit" /><br />
                 <nav>
                 <a href="#" id="clear"> Clear Info</a>
@@ -162,7 +114,7 @@ element {
 
             </form>
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
 	
 	</div>
@@ -174,6 +126,7 @@ element {
 	<div data-role="header" data-theme="a">
 
 <h1>Photo's</h1>
+<p align=center><img src="images/banner/banner.png"</p>
 </div>
 
 <fieldset class="ui-grid-b">
@@ -200,23 +153,28 @@ element {
 </fieldset>
 
 		
-		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>		
+		<a href="#feedback" data-role="button" data-theme="e">Get on The List</a>		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 			</div>
 		</div>
 	
 	<div data-role="page" id="feedback" data-add-back-btn="true">
 		<div data-role="header" data-theme="a">
 			<h1>Club Reviews</h1>
+				<p align=center><img src="images/banner/banner.png"</p>
 	</div>
 		<div data-role="content">
 		
 			<form action="" method="post" id="reviews">
 			
+			
+			<label for="club">*Required Field</label>
+		
+			
 		
 		<div data-role="fieldcontain">
-			<label for="club">Pick A Club</label>
+			<label for="club">*Pick A Club</label>
 			<select name="club" id="club-choice" data-native-menu="false" class="required">
 			<option data-placeholder="true" value>Where To Party?</option>
 				<optgroup label="Westside Clubs">
@@ -231,7 +189,7 @@ element {
 		</div>
 		
 		<div data-role="fieldcontain">
-			<label for="club">Have You Been V.I.P. Before?"</label>
+			<label for="club">*Have You Been V.I.P. Before?</label>
 			<select name="list" id="on-list" data-native-menu="false" class="required">
 			<option data-placeholder="true"value>Choose One</option>
 				<option value="yes">Yes</option>
@@ -240,19 +198,19 @@ element {
 		</div>
 				
 		<div data-role="fieldcontain">
-			<label for="Email">Email Address</label>
+			<label for="Email">*Email Address</label>
 			<input type="email" name="email" id="email"class="required email" placeholder="user@something.com">		
 			
 		</div>
 		
 		
 		<div data-role="fieldcontain">
-			<label for="phone">Phone Number</label>
+			<label for="phone">*Phone Number</label>
 			<input type="tel" name="phone" id="phone"class="required number"placeholder="312-555-1212"> 
 		</div>
 				
 		<div data-role="fieldcontain">
-			<label for="comments">Please List Special Occasions?</label>
+			<label for="comments">Reason For Party? (Birthday, Divorce, Graduation, ETC.)</label>
 			<textarea></textarea>	
 		</div>
 		
@@ -264,6 +222,7 @@ element {
 		</div>
 				
 				<a href="#reviewerrors" id="rerrorslink" data-rel="dialog" data-transition="pop">Errors</a>	
+				
 			</form>
 		
 		
@@ -281,6 +240,7 @@ element {
 	
 		<div data-role="header" data-position="fixed">
 			<h1>Event Stream</h1>
+			<p align=center><img src="images/banner/banner.png"</p>
 		</div>
 		
 		<div data-role="content">
@@ -420,9 +380,9 @@ element {
 			</ul>
 	</div>
 		
-		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>		
+		<a href="#feedback" data-role="button" data-theme="e">Get on The List</a>		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
 	
 	</div>
@@ -432,7 +392,7 @@ element {
 	<div data-role="header" data-position="fixed">
 	
 			<h1>Places To Party</h1>
-			
+				<p align=center><img src="images/banner/banner.png"</p>
 			</div>
 		
 		<div data-role="content">
@@ -463,9 +423,9 @@ element {
 			</ul>
 	</div>
 		
-		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>		
+		<a href="#feedback" data-role="button" data-theme="e">Get on The List</a>		
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
 	
 	</div>
@@ -476,7 +436,7 @@ element {
 	<div data-role="header" data-position="fixed">
 	
 			<h1>The Dj's List</h1>
-			
+				<p align=center><img src="images/banner/banner.png"</p>
 		</div>
 		
 		<div data-role="content" data-inset="true">
@@ -538,15 +498,16 @@ element {
 
 
 		</div>
-		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>
+		<a href="#feedback" data-role="button" data-theme="e">Get on The List</a>
 		<div data-role="footer" data-position="fixed">
-			<h4>Steve Ratliff MIU Week 3</h4>
+			<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
 		
 	</div>
 	<div data-role="page" id="promoter" data-add-back-btn="true">
 		<div data-role="header" data-position="fixed">
 			<h1>Promoter's</h1>
+			<p align=center><img src="images/banner/banner.png"</p>
 		</div>
 		
 		<div data-role="content" data-inset="true">
@@ -582,9 +543,9 @@ element {
 
 
 		</div>
-		<a href="#additem" data-role="button" data-theme="e">Get on The List</a>
+				<a href="#feedback" data-role="button" data-theme="e">Get on The List</a>
 			<div data-role="footer" data-position="fixed">
-				<h4>Steve Ratliff MIU Week 3</h4>
+				<h4>Steve Ratliff MIU Week 4</h4>
 		</div>
 		
 			<div data-role="dialog" id="reviewerrors">

@@ -4,33 +4,32 @@
 // Full Sail University
 
 //Wait until the DOM is ready.
-var parseReviews = function(data){
+var formReviews = function(data){
 	// uses form data here;
-	console.log(data);
 };
 
 $(document).ready(function(){
 
 	var rform = $('#reviews'),
-		rerrorlink = $('#rerrorslink')
-		;
+		rerrorlink = $('#rerrorslink');
 	
 	rform.validate({
 		invaildHandler: function(form, validator){
 			rerrorlink.click();
 			var html = '';
 			for(var key in validator.submitted){
-				var label = $('label[for^="'+ key +'"]').not('[generated]');
+				var label =$('label[for^="'+ key +'"]').not('[generated]');
 				var legend = label.closest('fieldset').find('.uicontrolgroup-label');
-				var fieldName = legend.length ? legend.text() : label.text();
-				html += '<li>'+ fieldName +'</li>';
+				var fieldname = legend.length ? legend.text() : label.text();
+				html += '<li>'+ fieldname +'</li>';
 				
 			};
 			$("#reviewerrors ul").html(html);
 		},
 		submitHandler: function(){
 			var data = rform.serializeArray();
-			parseReviews(data);
+			alert("Form Submited");
+			formReviews(data);
 		}
 		
 	});
@@ -67,6 +66,8 @@ window.addEventListener("DOMContentLoaded", function(){
         }
         selectLi.appendChild(makeSelect);
     }
+    
+ 
     
     
     //find value of selcted radio button.
@@ -174,10 +175,10 @@ window.addEventListener("DOMContentLoaded", function(){
 		var newImg = document.createElement('img');
 		var setSrc = newImg.setAttribute("src","images/Lettericons/"+ catName +".png");
 		imageLi.appendChild(newImg);
-		 
-	
+
+
 	}
-	
+
 	//JSON Object Which will auto populate local storage.
 	function autoFillData(){
 		var json = {
@@ -191,7 +192,7 @@ window.addEventListener("DOMContentLoaded", function(){
 				"email":	["Email:","pdiddy@badboyent.com"],
 				"rating":	["Rating:","8"],
 				"comments":	["Comments:","Record Release Party"]
-	
+
 			},
 			"contact2":	{
 				"group": 	["Day:", "Saturday"],
@@ -403,7 +404,7 @@ window.addEventListener("DOMContentLoaded", function(){
 				"comments":	["Comments:","Divorce Party"]
 
 			}
-				
+
 		};
 		//store the JSON OBJECT into local storage
 		for(var n in json){
