@@ -1,0 +1,334 @@
+/* write your CSS in here/*
+ title: style.css Styles
+ By:Stephen Ratliff
+ for: VFW project 4
+ Term: 12-11
+*/
+
+/* Make it look like an iPhone */
+body{
+	font-family: "Lucida Grande", "Arial", sans-serif;margin: auto;padding: 10px;
+}
+
+
+
+#site-wrapper{height: 885px; padding-top:25;
+}
+#content{
+	width: 480px;height: 690px;overflow: scroll;
+}
+
+/* Font normalization 
+ */
+
+body { 
+	font:12px/1.231; sans-serif; *font-size:small; 
+}
+select, input, textarea, button { 
+	font:99% sans-serif; 
+}
+
+legend {
+	font-size: 1em; color: #9d0900;   text-align: left; line-height: 1.6em;
+}
+textarea { overflow: auto; 
+} /* www.sitepoint.com */
+
+
+body{
+	/* background: #2D1E44; */ text-align: center;font-family:  "HelveticaNeue-Light","HelveticaNeue",Helvetica,Arial,sans-serif; font-weight: light; 
+}
+
+#container {
+	background: 0; width: 100%; min-width:1060px;
+}
+
+/* text and links */
+
+p {
+	 color: #9d0900;   text-align: left; line-height: 1.6em; 
+}
+.intro {
+	font-size: 2.1em !important; text-align: center; margin: 5px 0;
+}  
+.intro span {
+	color: #9d0900 ;
+}
+
+/* Headers*/
+h1 {
+	text-shadow: 2px;
+	color: #b9b9b9; font-size: 12em; margin: 0 0 32px 0;
+}
+h2 {
+	color: black; font-size: 1.9em; margin: 0 0 3px 0;
+}
+
+h3 {
+	color: #9d0900; font-size: 1.2em; margin: 0 0 15px 0;
+}
+h3 a {
+	font-family:  "HelveticaNeue-Light","HelveticaNeue",Helvetica,Arial,sans-serif; font-weight: lighter; 
+}
+
+h4 {
+	font-size: 1.3em; line-height: 1.6em; color: white; margin: 0 0 10px 0; font-weight: normal; 
+}
+h4 span {
+display: block; font-weight: normal; font-size: 1em; margin: 0 0 15px 0;
+}
+
+a { 	
+	color: #720D3D; text-decoration: none;
+	
+
+}
+
+/* list styles */
+li{
+	list-style: none; color: #20112e;
+}
+#list {
+	color: #9d0900;
+}
+/*Header*/
+
+header {
+	background: #bcbcbc; height: auto; overflow: hidden;
+}
+header img {
+	background-color: #bcbcbc;
+	padding: 25px 0 30px; }
+	
+
+	
+/* Navigation*/
+nav ul {  
+	min-height:60px; max-width: 850px; }
+
+nav {
+	margin: 0 auto; 
+    width: 960px;
+}
+
+
+nav ul > li:first-child {
+	margin-left: 0px !important;
+}
+nav ul > li.here:first-child {
+	margin-left: -10px !important;
+}
+nav li a{
+	color: black;
+	display: block; float: left; text-decoration: none; font-size: 1em;  text-transform: capitalize; padding: 11px 0 20px 17px; font-weight: normal;
+}
+ 
+nav li.here + li {
+	background: none ;
+}
+nav li.here + li a {
+	background: none ;padding: 10px 0 20px 8px;
+}
+
+/*postioning navigation menu*/
+nav {
+    bottom: 4em;
+    left: 5.5em;
+    width: 30em 
+}
+
+
+/*footer*/
+footer {c
+	lear: both;border-top: 6px solid #01dfff; padding: 40px; /* background: #2D1E44; */
+}
+footer ul {
+	margin: 20px 
+}
+footer ul li{
+	display: inline; padding: 0 20px;
+} 
+footer ul li a {
+	color: #fff;
+} 
+footer ul li.here a {
+	color: #9d0900;
+}
+
+footer p {
+	font-size:1em; margin: 20px 0 0 0; text-align: center;
+}
+
+
+
+[type = 'radio'] {
+	border: none; width: inherit;
+}
+ 
+fieldset{
+	border-color: black;
+	border-width: 1.5px;
+	border-style: solid;
+}
+
+ul{
+	list-style:none;
+}
+
+
+   
+span{
+	color: #9d0900;
+}
+/*--Create Guest Button--*/
+#go::-moz-focus-inner
+{
+       border: 0;  /* Small centering fix for Firefox */
+}    
+
+.desert {
+	width: 100px;
+	height: 100px;
+} 
+
+#errors{
+ 	color: red;
+}
+
+
+
+/* Icons*/
+
+
+.ui-icon {
+	background-color: #870700 						;
+}
+
+
+
+/* checks,radios */
+.ui-checkbox .ui-icon {
+	background-color: #ff021b 						;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* in-active state bg on checkbox & radio icons */
+.ui-icon-checkbox-off,
+.ui-icon-radio-off {
+}
+
+/* active state bg on checkbox & radio icons */
+.ui-checkbox-on .ui-icon,
+.ui-radio-on .ui-icon {
+	background-color: black; /* NOTE: this hex should match the active state color. It's repeated here for cascade */
+}   
+/* Button colors */
+.ui-btn {
+	border: 1px solid 		black;
+	background: 			#FFF;
+}
+
+/* background color inside the drop down menu */
+.ui-btn-inner{
+	/* border: 1px solid 		#DA1D68; */
+	                     		           
+}
+
+/* labels */
+label.ui-select {
+	color: #9d0900;
+}
+
+/* added from form3 ---------------------------------------------------------------------------------------------*/
+/* F bar theme - just for the headers */
+.ui-bar-f {
+	
+				
+	border-width: 1px;
+	
+				
+	border-style: solid;
+	
+				
+}
+
+p1{
+	font: caption;
+	color: #cc0000;
+	
+}
+
+
+
+/* Active class used as the "on" state across all themes
+-----------------------------------------------------------------------------------------------------------*/
+
+.ui-btn-active {
+	/* border: 1px solid 		#DA1D68; */
+	
+
+	background-color: #b9b9b9;
+	                     		           
+	
+
+	cursor: pointer;
+	text-shadow: 0 -1px 1px #145072;
+	text-decoration: none;
+  	outline: none;
+}
+
+.ui-bar-a {
+	color: #ffee00;
+	border-style: none; ;				
+}
+
+.ui-bar-e {
+	border-width: 1px;
+	border-style: none;
+}
+
+.ui-bar-b {
+	border-width: 1px;
+	border-style: solid;
+	background-color: #710701;				
+}
+
+.ui-button-b{
+	border-width: 1px;
+	background: 			black;
+}
+
+/* All white bg */
+
+/* Change both for bad app. */
+form{
+	background-color: none; 
+}
+
+div {
+	background: top-left;
+}
+
+/* Bad app button style */
+/* open errors link color changed on food form */
+#formerrorslink{
+	color: #cc0000;
+}
+
+/* Red error message */
+label.error{
+	display: block; margin: 10 px 0; color: #cc0000;
+	font-size: 14px; 
+}
+h2{
+	color: black;
+}
+h3{
+	color: #9d0900;
+}
+p{
+	color: black;
+}
+.ui-body-c,.ui-body-d,.ui-body-e
